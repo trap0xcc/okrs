@@ -1,0 +1,24 @@
+learning:
+  parallel-computing:
+    stanford:
+      target: Lectures 1–11 complete. Assignment 3 renderer correct on all required scenes, with
+        at least one serious profiling/optimization pass complete. Written Assignment 3 complete.
+    cuda:
+      target: 'Ch. 6 complete + Ch. 7 underway: Constant Memory and Events complete; Texture Memory
+        / heat-transfer example started. Through about p.123.'
+  linux:
+    ebpf:
+      target: Chapter 4 complete + Chapter 5 underway. Through about p.88.
+  negotiation:
+    negotiation-book:
+      target: 'Ch. 5 complete: Trigger the Two Words That Immediately Transform Any Negotiation'
+building:
+  memory-visualizer:
+    release:
+      target: 'Release candidate complete: basic polish, instructions, major bugs addressed'
+    user-feedback:
+      target: Initial outreach sent; at least 1 tester committed or scheduled
+    improvements:
+      target: Define how feedback will be captured and turned into actionable issues
+    blog-posts:
+      target: At least 2 posts published

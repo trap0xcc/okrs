@@ -1,0 +1,24 @@
+learning:
+  parallel-computing:
+    stanford:
+      target: Lectures 1–20 complete. All 5/5 programming assignments and 4/4 written assignments
+        complete. Do a full course-completion audit and make a concrete list of anything skipped,
+        incomplete, or inadequately understood.
+    cuda:
+      target: Ch. 11 complete + Ch. 12 underway. Through about p.237.
+  linux:
+    ebpf:
+      target: Chapter 8 complete + Chapter 9 underway. Through about p.175.
+  negotiation:
+    negotiation-book:
+      target: 'Ch. 10 complete: Find the Black Swan'
+building:
+  memory-visualizer:
+    release:
+      target: Stable improved release available
+    user-feedback:
+      target: No additional milestone required; KR should already be complete
+    improvements:
+      target: Improved version released and verified
+    blog-posts:
+      target: null

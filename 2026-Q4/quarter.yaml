@@ -1,0 +1,38 @@
+themes:
+- name: learning
+  title: Learning
+  objectives:
+  - name: parallel-computing
+    title: |-
+      Build strong parallel
+      computing fundamentals
+    key_results:
+    - name: stanford
+      title: Complete 100% of the Stanford parallel computing course assignments by the end of the
+        quarter
+    - name: cuda
+      title: Complete CUDA by Example by the end of the quarter
+  - name: linux
+    title: Deepen my mastery of Linux
+    key_results:
+    - name: ebpf
+      title: Complete Learning eBPF by Liz Rice by the end of the quarter
+  - name: negotiation
+    title: Develop further skills in negotiation
+    key_results:
+    - name: negotiation-book
+      title: Complete Never Split the Difference by the end of the quarter
+- name: building
+  title: Building
+  objectives:
+  - name: memory-visualizer
+    title: Ship a useful virtual memory visualizer and validate it with real users
+    key_results:
+    - name: release
+      title: Release a usable version by the end of the quarter
+    - name: user-feedback
+      title: Have at least 2 real users use it and provide substantive feedback
+    - name: improvements
+      title: Incorporate at least 1 round of feedback-driven improvements
+    - name: blog-posts
+      title: Write at least 4 blog posts tracking progress (one can be a release annoucement)

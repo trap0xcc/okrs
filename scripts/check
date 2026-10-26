@@ -1,0 +1,147 @@
+#!/usr/bin/env python3
+"""Validate a checkout, or the exact staged snapshot when invoked by a hook."""
+import argparse
+import datetime as dt
+import os
+from pathlib import Path
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+import yaml
+
+class UniqueLoader(yaml.SafeLoader):
+    pass
+
+def mapping(loader, node):
+    result = {}
+    for key_node, value_node in node.value:
+        key = loader.construct_object(key_node)
+        if not isinstance(key, str):
+            raise ValueError(f"mapping keys must be strings (line {key_node.start_mark.line + 1})")
+        if key in result:
+            raise ValueError(f"duplicate key {key!r} (line {key_node.start_mark.line + 1})")
+        result[key] = loader.construct_object(value_node)
+    return result
+UniqueLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, mapping)
+
+def read(path):
+    with open(path) as stream:
+        return yaml.load(stream, Loader=UniqueLoader)
+
+def weeks(quarter):
+    year, q = map(int, re.fullmatch(r'(\d{4})-Q([1-4])', quarter).groups())
+    first = dt.date(year, 3*q-2, 1)
+    end = dt.date(year+1, 1, 1) if q == 4 else dt.date(year, 3*q+1, 1)
+    day = first + dt.timedelta(days=(-first.weekday()) % 7)
+    result = []
+    while day < end:
+        result.append(day.isoformat())
+        day += dt.timedelta(days=7)
+    return result
+
+def unique(items, context):
+    seen = set()
+    for item in items:
+        if item['name'] in seen:
+            raise ValueError(f"{context}: duplicate name {item['name']}")
+        seen.add(item['name'])
+
+def validate(root, quarter=None):
+    root = Path(root)
+    cue = os.environ.get('CUE', 'cue')
+    if not shutil.which(cue):
+        raise ValueError('CUE is required; install cue v0.17.1 or set CUE to its executable')
+    dirs = [root / quarter] if quarter else sorted(p for p in root.iterdir() if p.is_dir() and re.fullmatch(r'\d{4}-Q[1-4]', p.name))
+    if not dirs:
+        raise ValueError(f'{root}: no quarterly data found')
+    output = {}
+    for directory in dirs:
+        qfile = directory / 'quarter.yaml'
+        weekly = sorted((directory / 'weeks').glob('*.yaml'))
+        data = {p: read(p) for p in [qfile, *weekly]}
+        for schema, definition, files in [('quarter', '#Quarter', [qfile]), ('week', '#Week', weekly)]:
+            if not files:
+                continue
+            proc = subprocess.run([cue, 'vet', '-c', '-d', definition, str(root/'schema'/f'{schema}.cue'), *map(str, files)], capture_output=True, text=True)
+            if proc.returncode:
+                raise ValueError(proc.stderr.strip() or proc.stdout.strip())
+        catalog = data[qfile]
+        refs = {}
+        unique(catalog['themes'], directory.name)
+        for theme in catalog['themes']:
+            unique(theme['objectives'], theme['name'])
+            for objective in theme['objectives']:
+                unique(objective['key_results'], objective['name'])
+                for kr in objective['key_results']:
+                    refs[(theme['name'], objective['name'], kr['name'])] = kr
+        valid_dates = weeks(directory.name)
+        completed = set()
+        entries = {}
+        for file in weekly:
+            if file.stem not in valid_dates:
+                raise ValueError(f'{file}: expected a Monday within {directory.name}')
+            entries[file.stem] = {}
+            for tn, objectives in data[file].items():
+                if tn not in {t['name'] for t in catalog['themes']}:
+                    raise ValueError(f'{file}: unknown theme {tn}')
+                for on, results in objectives.items():
+                    if not any(t == tn and o == on for t,o,k in refs):
+                        raise ValueError(f'{file}: unknown objective {tn}.{on}')
+                    for kn, entry in results.items():
+                        key = (tn,on,kn)
+                        if key not in refs:
+                            raise ValueError(f'{file}: unknown KR {key}')
+                        if key in completed and (entry.get('status') not in (None,'inactive') or 'target' in entry or 'progress' in entry):
+                            raise ValueError(f'{file}: remove targets/progress and active statuses after completion: {key}')
+                        if entry.get('status') == 'inactive' and entry.get('target') is not None:
+                            raise ValueError(f'{file}: inactive KR cannot have a target: {key}')
+                        if entry.get('status') == 'completed':
+                            completed.add(key)
+                        entries[file.stem][key] = entry
+        output[directory.name] = (catalog, entries)
+    return output
+
+def staged_snapshot(root, dest):
+    # Executed only when the user installs/runs the hook. Never changes the index.
+    records = subprocess.check_output(['git','-C',str(root),'ls-files','--stage','-z']).split(b'\0')
+    for record in records:
+        if not record:
+            continue
+        meta, path = record.split(b'\t',1)
+        mode, oid, stage = meta.split()
+        if stage != b'0':
+            raise ValueError('resolve staged conflicts before validation')
+        relative = Path(os.fsdecode(path))
+        if relative.is_absolute() or '..' in relative.parts:
+            raise ValueError('invalid staged path')
+        if relative.parts[0] != 'schema' and not re.fullmatch(r'\d{4}-Q[1-4]', relative.parts[0]):
+            continue
+        if mode not in (b'100644', b'100755'):
+            raise ValueError(f'symlinks/submodules are not allowed in data or schemas: {relative}')
+        target = dest / relative
+        target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_bytes(subprocess.check_output(['git','-C',str(root),'cat-file','blob',oid.decode()]))
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--staged',action='store_true')
+    parser.add_argument('--quarter')
+    args = parser.parse_args()
+    root = Path(__file__).resolve().parent.parent
+    try:
+        if args.staged:
+            with tempfile.TemporaryDirectory() as temp:
+                staged_snapshot(root,Path(temp))
+                validate(Path(temp),args.quarter)
+        else:
+            validate(root,args.quarter)
+    except (ValueError, OSError, yaml.YAMLError) as exc:
+        print(f'Invalid OKR data: {exc}',file=sys.stderr)
+        return 1
+    print('OKR data valid.')
+    return 0
+
+if __name__ == '__main__':
+    sys.exit(main())

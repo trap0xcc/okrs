@@ -1,0 +1,31 @@
+learning:
+  parallel-computing:
+    stanford:
+      status: yellow
+      target: 'Lectures 1–6 complete. Assignment 2 Part A complete. All three Part A implementations
+        work: spawn-per-launch, spinning thread pool, and sleeping thread pool; correctness/performance
+        tests run.'
+    cuda:
+      status: red
+      target: 'Ch. 4 complete: Parallel Programming in CUDA C. Through about p.57.'
+  linux:
+    ebpf:
+      status: red
+      target: Chapter 2 complete. Through about p.36.
+  negotiation:
+    negotiation-book:
+      status: green
+      target: 'Ch. 2 complete: Be a Mirror'
+building:
+  memory-visualizer:
+    release:
+      status: green
+      target: Majority of MVP functionality implemented
+    user-feedback:
+      status: green
+      target: Begin building a list of potential testers
+    improvements:
+      status: inactive
+    blog-posts:
+      status: red
+      target: At least 1 post published

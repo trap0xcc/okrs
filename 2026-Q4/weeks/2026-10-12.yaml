@@ -1,0 +1,30 @@
+learning:
+  parallel-computing:
+    stanford:
+      status: green
+      target: Lectures 1–4 complete. Assignment 1 complete. Written Assignment 1 complete. That means
+        all six A1 programs, required performance analysis, code, and writeup are done. A1 really
+        does contain six separate programs rather than a single coding task.
+    cuda:
+      status: yellow
+      target: 'Ch. 1–3 complete: Why CUDA?, setup, and Introduction to CUDA C. Through about p.35.'
+  linux:
+    ebpf:
+      status: red
+      target: Chapter 1 complete + Chapter 2 underway. Through about p.18.
+  negotiation:
+    negotiation-book:
+      status: green
+      target: 'Ch. 1 complete: The New Rules'
+building:
+  memory-visualizer:
+    release:
+      status: green
+      target: Core prototype works end-to-end for at least one representative use case
+    user-feedback:
+      status: green
+      target: Identify characteristics of an appropriate test user
+    improvements:
+      status: inactive
+    blog-posts:
+      status: inactive

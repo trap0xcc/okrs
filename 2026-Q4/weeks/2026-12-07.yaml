@@ -1,0 +1,25 @@
+learning:
+  parallel-computing:
+    stanford:
+      target: Lectures 1–18 complete. Written Assignment 4 complete. Assignment 5 complete. Have
+        multiple measured optimization iterations plus the final kernel and work log. A5 is intentionally
+        much smaller than A3/A4, roughly “two evenings” for a reasonable result.
+    cuda:
+      target: 'Ch. 10 complete + Ch. 11 started: Streams complete; Multi-GPU material underway. Through
+        about p.214.'
+  linux:
+    ebpf:
+      target: Chapter 7 complete + Chapter 8 underway. Through about p.158.
+  negotiation:
+    negotiation-book:
+      target: 'Ch. 9 complete: Bargain Hard'
+building:
+  memory-visualizer:
+    release:
+      target: Updated release incorporates feedback work where applicable
+    user-feedback:
+      target: Feedback from both users organized/synthesized
+    improvements:
+      target: Selected feedback-driven improvements implemented
+    blog-posts:
+      target: null

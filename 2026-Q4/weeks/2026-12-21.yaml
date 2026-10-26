@@ -1,0 +1,24 @@
+learning:
+  parallel-computing:
+    stanford:
+      target: 100% substantive work complete. Any gaps found on 12/14 closed; rerun/verify assignment
+        tests where appropriate; no unfinished assignment implementation or written problem remains.
+    cuda:
+      target: All 12 main chapters complete + Appendix A underway. Through roughly p.255–260.
+  linux:
+    ebpf:
+      target: Chapters 9–10 complete. Through about p.200.
+  negotiation:
+    negotiation-book:
+      target: 'Appendix complete: negotiation one-sheet; review notes/highlights and identify the
+        techniques you actually want to retain'
+building:
+  memory-visualizer:
+    release:
+      target: Final release/documentation cleanup
+    user-feedback:
+      target: Buffer for replacing a weak/missing feedback session if necessary
+    improvements:
+      target: Optional follow-up validation / cleanup
+    blog-posts:
+      target: null

@@ -1,0 +1,25 @@
+learning:
+  parallel-computing:
+    stanford:
+      target: 'Lectures 1–17 complete. Assignment 4 complete: fused max pooling works, float16/float32
+        correctness passes, performance optimization done, and writeup finished. Start Assignment
+        5 by choosing a kernel, establishing the baseline, and recording the first profiler measurements.'
+    cuda:
+      target: 'Ch. 9 complete + Ch. 10 started: Atomics complete; Streams underway. Through about
+        p.191.'
+  linux:
+    ebpf:
+      target: Chapter 7 mostly complete. Through about p.140.
+  negotiation:
+    negotiation-book:
+      target: 'Ch. 8 complete: Guarantee Execution'
+building:
+  memory-visualizer:
+    release:
+      target: No additional milestone required beyond maintaining the released version
+    user-feedback:
+      target: 2 users have used it and provided substantive feedback
+    improvements:
+      target: Feedback synthesized and improvement round selected
+    blog-posts:
+      target: At least 3 posts published

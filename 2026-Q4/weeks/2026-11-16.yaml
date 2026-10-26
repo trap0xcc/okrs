@@ -1,0 +1,24 @@
+learning:
+  parallel-computing:
+    stanford:
+      target: 'Lectures 1–13 complete. Assignment 3 completely finished, including renderer performance
+        tuning and writeup. Assignment 4 Part 1 complete: vector-add exercises/questions and matrix-transpose
+        kernel working.'
+    cuda:
+      target: Ch. 7 complete + Ch. 8 started. Through about p.145.
+  linux:
+    ebpf:
+      target: Chapter 5 mostly complete. Through about p.105.
+  negotiation:
+    negotiation-book:
+      target: 'Ch. 6 complete: Bend Their Reality'
+building:
+  memory-visualizer:
+    release:
+      target: Usable v1 released
+    user-feedback:
+      target: At least 1 real user actively testing or scheduled imminently
+    improvements:
+      target: Feedback backlog/template ready
+    blog-posts:
+      target: null

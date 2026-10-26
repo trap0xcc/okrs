@@ -1,0 +1,28 @@
+learning:
+  parallel-computing:
+    stanford:
+      status: green
+      target: Lectures 1–2 complete. Assignment 1 environment working and Programs 1–2 complete,
+        including measurements/questions.
+    cuda:
+      status: yellow
+      target: Baseline. Book started / development environment available.
+  linux:
+    ebpf:
+      status: yellow
+      target: Baseline. Book/repo available; environment for examples usable.
+  negotiation:
+    negotiation-book:
+      status: green
+      target: Baseline established; book started
+building:
+  memory-visualizer:
+    release:
+      status: yellow
+      target: Scope and minimum useful feature set defined
+    user-feedback:
+      status: inactive
+    improvements:
+      status: inactive
+    blog-posts:
+      status: inactive

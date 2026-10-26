@@ -1,0 +1,25 @@
+learning:
+  parallel-computing:
+    stanford:
+      target: 'Lectures 1–15 complete. Assignment 4 Part 2 functionally correct through the core
+        Conv2D cases: small images, large images/SBUF tiling, and bias addition. MaxPool fusion can
+        still be outstanding. The handout itself recommends exactly this correctness progression.'
+    cuda:
+      target: 'Ch. 8 complete + Ch. 9 underway: Graphics Interoperability complete; Atomics started.
+        Through about p.168.'
+  linux:
+    ebpf:
+      target: Chapter 5 complete + Chapter 6 complete or nearly complete. Through about p.123.
+  negotiation:
+    negotiation-book:
+      target: 'Ch. 7 complete: Create the Illusion of Control'
+building:
+  memory-visualizer:
+    release:
+      target: Release remains usable while user-testing issues are fixed as needed
+    user-feedback:
+      target: User 1 has used it and provided substantive feedback
+    improvements:
+      target: First real feedback converted into concrete candidate improvements
+    blog-posts:
+      target: null

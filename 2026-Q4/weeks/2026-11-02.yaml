@@ -1,0 +1,25 @@
+learning:
+  parallel-computing:
+    stanford:
+      target: 'Lectures 1–9 complete (remember Spark is skipped, so this means through DNN inference).
+        Assignment 3 Parts 1 and 2 complete: CUDA SAXPY plus parallel prefix-sum/find-repeats. Assignment
+        3 renderer understood and a correctness-first renderer implementation underway.'
+    cuda:
+      target: 'Ch. 5 complete + Ch. 6 started: shared memory/synchronization complete; constant memory
+        underway. Through about p.100.'
+  linux:
+    ebpf:
+      target: Chapter 3 complete + Chapter 4 underway. Through about p.70.
+  negotiation:
+    negotiation-book:
+      target: 'Ch. 4 complete: Beware “Yes”—Master “No”'
+building:
+  memory-visualizer:
+    release:
+      target: Feature-complete MVP
+    user-feedback:
+      target: At least 5 potential testers identified and outreach approach prepared
+    improvements:
+      status: inactive
+    blog-posts:
+      target: null

@@ -1,0 +1,32 @@
+learning:
+  parallel-computing:
+    stanford:
+      status: red
+      target: Lectures 1–7 complete. Assignment 2 complete. Written Assignment 2 complete. Part B
+        dependency-aware scheduling, runAsyncWithDeps(), sync(), your own test, performance work,
+        and writeup finished.
+    cuda:
+      status: red
+      target: 'Ch. 5 through §5.2 complete: Thread Cooperation, including splitting parallel blocks.
+        Through about p.74.'
+  linux:
+    ebpf:
+      status: red
+      target: Chapter 3 mostly complete. Through about p.53.
+  negotiation:
+    negotiation-book:
+      status: red
+      target: 'Ch. 3 complete: Don’t Feel Their Pain, Label It'
+building:
+  memory-visualizer:
+    release:
+      status: red
+      target: Internal alpha usable; major gaps identified
+    user-feedback:
+      status: green
+      target: At least 3 potential testers identified
+    improvements:
+      status: inactive
+    blog-posts:
+      status: red
+      target: null
