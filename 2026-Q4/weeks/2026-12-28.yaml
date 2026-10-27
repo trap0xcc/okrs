@@ -17,10 +17,10 @@ learning:
 building:
   memory-visualizer:
     release:
-      target: 'KR complete: usable version released and available'
+      target: 'KR complete: usable version released and available; final release/documentation cleanup'
     user-feedback:
-      target: 'KR complete: ≥2 substantive user-feedback sessions'
+      target: 'KR complete: ≥2 substantive user-feedback sessions; buffer for replacing a weak/missing feedback session if necessary'
     improvements:
-      target: 'KR complete: ≥1 feedback-driven improvement round incorporated'
+      target: 'KR complete: ≥1 feedback-driven improvement round incorporated; optional follow-up validation / cleanup'
     blog-posts:
       target: At least 4 posts published

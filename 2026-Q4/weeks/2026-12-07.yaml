@@ -16,10 +16,10 @@ learning:
 building:
   memory-visualizer:
     release:
-      target: Updated release incorporates feedback work where applicable
+      target: No additional milestone required beyond maintaining the released version
     user-feedback:
-      target: Feedback from both users organized/synthesized
+      target: 2 users have used it and provided substantive feedback
     improvements:
-      target: Selected feedback-driven improvements implemented
+      target: Feedback synthesized and improvement round selected
     blog-posts:
-      target: null
+      target: At least 3 posts published

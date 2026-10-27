@@ -15,10 +15,10 @@ learning:
 building:
   memory-visualizer:
     release:
-      target: Final release/documentation cleanup
+      target: Stable improved release available
     user-feedback:
-      target: Buffer for replacing a weak/missing feedback session if necessary
+      target: No additional milestone required; KR should already be complete
     improvements:
-      target: Optional follow-up validation / cleanup
+      target: Improved version released and verified
     blog-posts:
       target: null

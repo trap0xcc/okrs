@@ -16,10 +16,10 @@ learning:
 building:
   memory-visualizer:
     release:
-      target: Feature-complete MVP
+      status: inactive
     user-feedback:
-      target: At least 5 potential testers identified and outreach approach prepared
+      status: inactive
     improvements:
       status: inactive
     blog-posts:
-      target: null
+      status: inactive

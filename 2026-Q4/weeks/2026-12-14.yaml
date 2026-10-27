@@ -15,10 +15,10 @@ learning:
 building:
   memory-visualizer:
     release:
-      target: Stable improved release available
+      target: Updated release incorporates feedback work where applicable
     user-feedback:
-      target: No additional milestone required; KR should already be complete
+      target: Feedback from both users organized/synthesized
     improvements:
-      target: Improved version released and verified
+      target: Selected feedback-driven improvements implemented
     blog-posts:
       target: null

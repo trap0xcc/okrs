@@ -2,6 +2,7 @@ learning:
   parallel-computing:
     stanford:
       status: red
+      progress: Made progress on Assignment 2 Part A. Part B remains unfinished. No progress on Written Assignment 2 or Lecture 7.
       target: Lectures 1–7 complete. Assignment 2 complete. Written Assignment 2 complete. Part B
         dependency-aware scheduling, runAsyncWithDeps(), sync(), your own test, performance work,
         and writeup finished.

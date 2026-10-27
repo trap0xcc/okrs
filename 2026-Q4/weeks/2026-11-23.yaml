@@ -16,10 +16,10 @@ learning:
 building:
   memory-visualizer:
     release:
-      target: Release remains usable while user-testing issues are fixed as needed
+      target: Usable v1 released
     user-feedback:
-      target: User 1 has used it and provided substantive feedback
+      target: At least 1 real user actively testing or scheduled imminently
     improvements:
-      target: First real feedback converted into concrete candidate improvements
+      target: Feedback backlog/template ready
     blog-posts:
       target: null

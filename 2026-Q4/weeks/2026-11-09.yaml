@@ -15,10 +15,10 @@ learning:
 building:
   memory-visualizer:
     release:
-      target: 'Release candidate complete: basic polish, instructions, major bugs addressed'
+      target: Feature-complete MVP
     user-feedback:
-      target: Initial outreach sent; at least 1 tester committed or scheduled
+      target: At least 5 potential testers identified and outreach approach prepared
     improvements:
-      target: Define how feedback will be captured and turned into actionable issues
+      status: inactive
     blog-posts:
-      target: At least 2 posts published
+      target: null

@@ -15,10 +15,10 @@ learning:
 building:
   memory-visualizer:
     release:
-      target: Usable v1 released
+      target: 'Release candidate complete: basic polish, instructions, major bugs addressed'
     user-feedback:
-      target: At least 1 real user actively testing or scheduled imminently
+      target: Initial outreach sent; at least 1 tester committed or scheduled
     improvements:
-      target: Feedback backlog/template ready
+      target: Define how feedback will be captured and turned into actionable issues
     blog-posts:
-      target: null
+      target: At least 2 posts published
