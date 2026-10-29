@@ -1,14 +1,12 @@
 learning:
   parallel-computing:
     stanford:
-      target: 'Lectures 1–13 complete. Assignment 3 completely finished, including renderer performance
-        tuning and writeup. Assignment 4 Part 1 complete: vector-add exercises/questions and matrix-transpose
-        kernel working.'
+      target: 'Lectures 10–11 complete. Assignment 3 renderer correct on all required scenes; record baseline performance and identify bottlenecks. Complete the first half of Written Assignment 3 graded problems.'
     cuda:
-      target: Ch. 7 complete + Ch. 8 started. Through about p.145.
+      target: 'Through about p.96, including examples covered so far.'
   linux:
     ebpf:
-      target: Chapter 5 mostly complete. Through about p.105.
+      target: 'Through about p.60, including the examples/exercises covered so far.'
   negotiation:
     negotiation-book:
       target: 'Ch. 6 complete: Bend Their Reality'

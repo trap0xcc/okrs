@@ -1,15 +1,12 @@
 learning:
   parallel-computing:
     stanford:
-      target: 'Lectures 1–17 complete. Assignment 4 complete: fused max pooling works, float16/float32
-        correctness passes, performance optimization done, and writeup finished. Start Assignment
-        5 by choosing a kernel, establishing the baseline, and recording the first profiler measurements.'
+      target: 'Lectures 14–15 complete. Assignment 4 Part 1 complete: environment ready, vector-add exercises/questions complete, matrix-transpose kernel working. Read Part 2 and plan the Conv2D implementation.'
     cuda:
-      target: 'Ch. 9 complete + Ch. 10 started: Atomics complete; Streams underway. Through about
-        p.191.'
+      target: 'Through about p.156, including examples covered so far.'
   linux:
     ebpf:
-      target: Chapter 7 mostly complete. Through about p.140.
+      target: 'Through about p.110, including the examples/exercises covered so far.'
   negotiation:
     negotiation-book:
       target: 'Ch. 8 complete: Guarantee Execution'

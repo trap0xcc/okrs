@@ -1,13 +1,12 @@
 learning:
   parallel-computing:
     stanford:
-      target: 100% substantive work complete. Any gaps found on 12/14 closed; rerun/verify assignment
-        tests where appropriate; no unfinished assignment implementation or written problem remains.
+      target: 'Lecture 19 complete. Assignment 5 kernel selected; correctness and baseline established; first profiling measurements and measured optimization iteration recorded in the work log.'
     cuda:
-      target: All 12 main chapters complete + Appendix A underway. Through roughly p.255–260.
+      target: 'Through about p.247, including examples covered so far.'
   linux:
     ebpf:
-      target: Chapters 9–10 complete. Through about p.200.
+      target: 'Through about p.185, including the examples/exercises covered so far.'
   negotiation:
     negotiation-book:
       target: 'Appendix complete: negotiation one-sheet; review notes/highlights and identify the

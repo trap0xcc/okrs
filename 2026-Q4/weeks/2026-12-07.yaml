@@ -1,15 +1,12 @@
 learning:
   parallel-computing:
     stanford:
-      target: Lectures 1–18 complete. Written Assignment 4 complete. Assignment 5 complete. Have
-        multiple measured optimization iterations plus the final kernel and work log. A5 is intentionally
-        much smaller than A3/A4, roughly “two evenings” for a reasonable result.
+      target: 'Lectures 16–17 complete. Assignment 4 Part 2 Conv2D correct for small images, large images/SBUF tiling, and bias addition. Complete the first half of Written Assignment 4 graded problems.'
     cuda:
-      target: 'Ch. 10 complete + Ch. 11 started: Streams complete; Multi-GPU material underway. Through
-        about p.214.'
+      target: 'Through about p.186, including examples covered so far.'
   linux:
     ebpf:
-      target: Chapter 7 complete + Chapter 8 underway. Through about p.158.
+      target: 'Through about p.135, including the examples/exercises covered so far.'
   negotiation:
     negotiation-book:
       target: 'Ch. 9 complete: Bargain Hard'

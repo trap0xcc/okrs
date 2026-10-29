@@ -1,25 +1,34 @@
 learning:
   parallel-computing:
     stanford:
-      target: 'Lectures 1–9 complete (remember Spark is skipped, so this means through DNN inference).
-        Assignment 3 Parts 1 and 2 complete: CUDA SAXPY plus parallel prefix-sum/find-repeats. Assignment
-        3 renderer understood and a correctness-first renderer implementation underway.'
+      status: red
+      progress: No progress so far as of 2026-10-29.
+      target: 'Spend up to 8 focused hours on Stanford: 5 hours finishing Assignment 2 Part A and progressing toward a correct Part B; 1.5 hours on Lecture 7; 1.5 hours starting Written Assignment 2 graded Problems 1–5 (practice problems excluded). Full Assignment 2 completion is not required this week.'
     cuda:
-      target: 'Ch. 5 complete + Ch. 6 started: shared memory/synchronization complete; constant memory
-        underway. Through about p.100.'
+      status: red
+      progress: No progress so far as of 2026-10-29.
+      target: 'Finish Chapter 3, including its examples. Through about p.35.'
   linux:
     ebpf:
-      target: Chapter 3 complete + Chapter 4 underway. Through about p.70.
+      status: red
+      progress: No progress so far as of 2026-10-29.
+      target: 'Finish Chapter 1. Establish access to the book/repository and an environment for working through examples.'
   negotiation:
     negotiation-book:
+      status: red
+      progress: No progress so far as of 2026-10-29.
       target: 'Ch. 4 complete: Beware “Yes”—Master “No”'
 building:
   memory-visualizer:
     release:
       status: inactive
+      progress: No progress so far as of 2026-10-29.
     user-feedback:
       status: inactive
+      progress: No progress so far as of 2026-10-29.
     improvements:
       status: inactive
+      progress: No progress so far as of 2026-10-29.
     blog-posts:
       status: inactive
+      progress: No progress so far as of 2026-10-29.

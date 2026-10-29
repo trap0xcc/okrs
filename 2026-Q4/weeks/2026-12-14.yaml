@@ -1,14 +1,12 @@
 learning:
   parallel-computing:
     stanford:
-      target: Lectures 1–20 complete. All 5/5 programming assignments and 4/4 written assignments
-        complete. Do a full course-completion audit and make a concrete list of anything skipped,
-        incomplete, or inadequately understood.
+      target: 'Lecture 18 complete. Assignment 4 complete: fused max pooling, float16/float32 correctness, performance optimization, and writeup. Finish the remaining graded problems in Written Assignment 4.'
     cuda:
-      target: Ch. 11 complete + Ch. 12 underway. Through about p.237.
+      target: 'Through about p.217, including examples covered so far.'
   linux:
     ebpf:
-      target: Chapter 8 complete + Chapter 9 underway. Through about p.175.
+      target: 'Through about p.160, including the examples/exercises covered so far.'
   negotiation:
     negotiation-book:
       target: 'Ch. 10 complete: Find the Black Swan'

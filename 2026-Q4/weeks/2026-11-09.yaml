@@ -1,14 +1,12 @@
 learning:
   parallel-computing:
     stanford:
-      target: Lectures 1–11 complete. Assignment 3 renderer correct on all required scenes, with
-        at least one serious profiling/optimization pass complete. Written Assignment 3 complete.
+      target: 'Finish remaining Assignment 2 Part B, correctness/performance testing, custom tests, and writeup. Finish remaining Written Assignment 2 graded Problems 1–5 (practice problems excluded). Complete Lectures 8–9, following the existing course sequence with Spark skipped. If time remains, begin Assignment 3 CUDA SAXPY and parallel prefix-sum/find-repeats; revisit later assignment milestones based on remaining workload.'
     cuda:
-      target: 'Ch. 6 complete + Ch. 7 underway: Constant Memory and Events complete; Texture Memory
-        / heat-transfer example started. Through about p.123.'
+      target: 'Through about p.65, including examples covered so far.'
   linux:
     ebpf:
-      target: Chapter 4 complete + Chapter 5 underway. Through about p.88.
+      target: 'Through about p.35, including the examples/exercises covered so far.'
   negotiation:
     negotiation-book:
       target: 'Ch. 5 complete: Trigger the Two Words That Immediately Transform Any Negotiation'

@@ -1,16 +1,12 @@
 learning:
   parallel-computing:
     stanford:
-      target: 'KR complete: 100% of the Stanford CS149 course work you defined is finished: 20/20
-        lectures, 5/5 programming assignments, 4/4 written assignments. Final buffer only, not a
-        week in which major work is supposed to happen.'
+      target: 'Lecture 20 complete. Assignment 5 complete, including remaining measured optimization iterations, final kernel, and work log. Audit course completion and close remaining gaps: 20/20 lectures in the chosen sequence, 5/5 programming assignments, and graded problems from all 4 written assignments complete.'
     cuda:
-      target: 'KR complete: Chapters 1–12 + Advanced Atomics appendix complete, including the examples
-        you consider part of working through the book. Through p.277.'
+      target: 'KR complete: Chapters 1–12 + Advanced Atomics appendix complete, including the examples you consider part of working through the book. Through p.277.'
   linux:
     ebpf:
-      target: 'KR complete: Chapters 1–11 complete, including the examples/exercises you’re treating
-        as part of completing the book. Roughly through p.210, before the index.'
+      target: 'KR complete: Chapters 1–11 complete, including the examples/exercises you’re treating as part of completing the book. Roughly through p.210, before the index.'
   negotiation:
     negotiation-book:
       target: 'KR complete: entire book finished; Chapters 1–10 + negotiation one-sheet complete'
