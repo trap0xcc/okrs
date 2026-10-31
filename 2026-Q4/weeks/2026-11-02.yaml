@@ -10,8 +10,8 @@ learning:
       target: Chapter 3
   linux:
     ebpf:
-      status: red
-      progress: No progress so far as of 2026-10-29.
+      status: green
+      progress: Completed Learning eBPF Chapter 1 on 2026-10-30.
       target: Chapter 1
   negotiation:
     negotiation-book:
