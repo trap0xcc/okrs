@@ -1,7 +1,7 @@
 learning:
   parallel-computing:
     stanford:
-      status: red
+      status: yellow
       progress: Completed CS149 Lecture 7 on 2026-10-29. Assignment 2 and Written Assignment 2 remain outstanding.
       target: Coding Assignment 2, Written Assignment 2, Lecture 7
     cuda:
