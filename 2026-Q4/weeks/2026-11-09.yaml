@@ -2,6 +2,7 @@ learning:
   parallel-computing:
     stanford:
       target: 'Finish remaining Assignment 2 Part B, correctness/performance testing, custom tests, and writeup. Finish remaining Written Assignment 2 graded Problems 1–5 (practice problems excluded). Complete Lectures 8–9, following the existing course sequence with Spark skipped. If time remains, begin Assignment 3 CUDA SAXPY and parallel prefix-sum/find-repeats; revisit later assignment milestones based on remaining workload.'
+      progress: Finished lecture 8
     cuda:
       target: 'Through about p.65, including examples covered so far.'
   linux:

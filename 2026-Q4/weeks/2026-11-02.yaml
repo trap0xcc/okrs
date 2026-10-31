@@ -2,22 +2,22 @@ learning:
   parallel-computing:
     stanford:
       status: red
-      progress: No progress so far as of 2026-10-29.
-      target: 'Spend up to 8 focused hours on Stanford: 5 hours finishing Assignment 2 Part A and progressing toward a correct Part B; 1.5 hours on Lecture 7; 1.5 hours starting Written Assignment 2 graded Problems 1–5 (practice problems excluded). Full Assignment 2 completion is not required this week.'
+      progress: Completed CS149 Lecture 7 on 2026-10-29. Assignment 2 and Written Assignment 2 remain outstanding.
+      target: Coding Assignment 2, Written Assignment 2, Lecture 7
     cuda:
-      status: red
-      progress: No progress so far as of 2026-10-29.
-      target: 'Finish Chapter 3, including its examples. Through about p.35.'
+      status: green
+      progress: Completed CUDA by Example Chapter 3 on 2026-10-29.
+      target: Chapter 3
   linux:
     ebpf:
       status: red
       progress: No progress so far as of 2026-10-29.
-      target: 'Finish Chapter 1. Establish access to the book/repository and an environment for working through examples.'
+      target: Chapter 1
   negotiation:
     negotiation-book:
       status: red
       progress: No progress so far as of 2026-10-29.
-      target: 'Ch. 4 complete: Beware “Yes”—Master “No”'
+      target: Chapter 4
 building:
   memory-visualizer:
     release:
